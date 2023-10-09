@@ -16,7 +16,7 @@ public class Sedmica2_5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int[] a = new int[]{3,2,3,4,2,2,4,5,5,1,5,1};
+        int[] a = new int[]{3,2,3,4,2,2,4};
         Arrays.sort(a);
         for(int i = 0;i<a.length;i++)
         {
