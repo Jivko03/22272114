@@ -1,0 +1,116 @@
+import java.util.Scanner;
+
+abstract class Shapes {
+    abstract double calculatePerimeter();
+    abstract double calculateArea();
+    abstract void display();
+}
+
+class Rectangle extends Shapes {
+    private double length;
+    private double width;
+
+    Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    double calculatePerimeter() {
+        return 2 * (length + width);
+    }
+
+    double calculateArea() {
+        return length * width;
+    }
+
+    void display() {
+        System.out.println("Rectangle:");
+        System.out.println("Length: " + length);
+        System.out.println("Width: " + width);
+        System.out.println("Perimeter: " + calculatePerimeter());
+        System.out.println("Area: " + calculateArea());
+        System.out.println();
+    }
+}
+
+class SimplePolygon extends Shapes {
+    private int numSides;
+    private double sideLength;
+
+    SimplePolygon(int numSides, double sideLength) {
+        this.numSides = numSides;
+        this.sideLength = sideLength;
+    }
+
+    double calculatePerimeter() {
+        return numSides * sideLength;
+    }
+
+    double calculateArea() {
+        // For simplicity, assuming the simple polygon is regular (all sides and angles are equal)
+        return (numSides * Math.pow(sideLength, 2)) / (4 * Math.tan(Math.PI / numSides));
+    }
+
+    void display() {
+        System.out.println("Simple Polygon:");
+        System.out.println("Number of sides: " + numSides);
+        System.out.println("Side length: " + sideLength);
+        System.out.println("Perimeter: " + calculatePerimeter());
+        System.out.println("Area: " + calculateArea());
+        System.out.println();
+    }
+}
+
+class Circle extends Shapes {
+    private double radius;
+
+    Circle(double radius) {
+        this.radius = radius;
+    }
+
+    double calculatePerimeter() {
+        return 2 * Math.PI * radius;
+    }
+
+    double calculateArea() {
+        return Math.PI * Math.pow(radius, 2);
+    }
+
+    void display() {
+        System.out.println("Circle:");
+        System.out.println("Radius: " + radius);
+        System.out.println("Perimeter: " + calculatePerimeter());
+        System.out.println("Area: " + calculateArea());
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Pravoagalnik
+        System.out.println("Enter the length of the rectangle:");
+        double rectLength = scanner.nextDouble();
+        System.out.println("Enter the width of the rectangle:");
+        double rectWidth = scanner.nextDouble();
+        Rectangle rectangle = new Rectangle(rectLength, rectWidth);
+        rectangle.display();
+
+        // Poligon
+        System.out.println("Enter the number of sides of the simple polygon:");
+        int numSides = scanner.nextInt();
+        System.out.println("Enter the length of each side of the simple polygon:");
+        double sideLength = scanner.nextDouble();
+        SimplePolygon polygon = new SimplePolygon(numSides, sideLength);
+        polygon.display();
+
+        // Krag
+        System.out.println("Enter the radius of the circle:");
+        double circleRadius = scanner.nextDouble();
+        Circle circle = new Circle(circleRadius);
+        circle.display();
+
+        scanner.close();
+    }
+}
