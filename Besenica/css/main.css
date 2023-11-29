@@ -1,0 +1,317 @@
+/*
+* Main styles that are included in all pages
+*/
+HTML, BODY {
+	margin: 0px;
+}
+
+
+/*
+* Styles about menu and top bar
+*/
+DIV#nb {
+	width: 100%;
+	position: relative;
+	margin-top: 3px;
+}
+
+DIV#right {
+	text-align: right;
+	display: inline;
+	position: absolute;
+	right: 15px;
+	font-size: 80%;
+	color: gray;
+}
+
+DIV.menu {
+	display: none;
+	position: absolute;
+}
+
+DIV.out {
+	display: block;
+	position: relative;
+	margin: 7px 0px 0px 6px;
+}
+
+DIV.in {
+	background-color: white;
+	border: 1px solid blue;
+	position: relative;
+	padding: 10px 10px 15px 10px;
+	left: -7px;
+	top: -7px;
+}
+
+DIV.vShadow, DIV.hShadow {
+	background-color: gray;
+	position: absolute;
+	opacity: 0.60;
+}
+
+DIV.vShadow {
+	right: 0;
+	top: 0;
+	width: 7px;
+	height: 100%;
+}
+
+DIV.hShadow {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 7px;
+}
+
+SPAN.downButton {
+	font-size: 70%;
+}
+
+DIV#nb A.mainLink {
+	text-decoration: none;
+	margin-left: 7px;
+	margin-right: 7px;
+	color: blue;
+}
+
+DIV#nb A.mainLink:first-child {
+	margin-left: 15px;
+}
+
+DIV#nb A.mainLink:visited {
+	color: blue;
+}
+
+DIV#nb TABLE {
+	width: 10%;
+	border-collapse: collapse;
+}
+
+DIV#nb TABLE TD {
+	padding: 5px 15px;
+	white-space: nowrap;
+}
+
+DIV#nb A.adLink {
+	text-decoration: none;
+	margin-left: 7px;
+	margin-right: 3px;
+	color: blue;
+	font-weight: bold;
+}
+
+DIV#nb A.adLink:visited {
+	color: blue;
+}
+
+DIV#nb SPAN.newItem {
+	font-weight: bold;
+	color: red;
+	font-size: 80%;
+	vertical-align: 3px;
+}
+
+DIV#nb A#adLink1 {
+	margin-left: 50px;
+}
+
+
+/*
+* Styles about latin to cyrillic translator
+*/
+A#lat2cyrLink {
+	color: white;
+	background-color: navy;
+	font-family: monospace;
+	text-decoration: none;
+	padding: 1px 3px;
+	border: 1px solid black;
+}
+
+
+/*
+* Styles about search field
+*/
+TABLE#searchFormTable {
+	width: 10%;
+	margin: 0px auto 5px auto;
+	border-collapse: collapse;
+}
+
+TABLE#searchFormTable TD {
+	padding: 2px 5px;
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+TABLE#searchFormTable TD.right {
+	text-align: right;
+}
+
+TABLE#searchFormTable INPUT, TEXTAREA {
+	width: 450px;
+	font-family: arial;
+	font-size: 11pt;
+}
+
+
+/*
+* Styles about title of page
+*/
+H1.title {
+	text-align: center;
+	font-size: 125%;
+	font-weight: normal;
+	margin-top: 20px;
+}
+
+
+/*
+* Styles about description of page
+*/
+DIV.description, DIV.topDescription {
+	width: 70%;
+	margin: 5px auto 0px auto;
+}
+
+DIV.description {
+	margin-top: 30px;
+}
+
+DIV.description P, DIV.topDescription P {
+	text-indent: 20px;
+	text-align:center;
+}
+
+
+/*
+* Styles about image - only on main page
+*/
+IMG#slovored {
+	margin: 100px auto 50px auto;
+	display: block;
+	text-align: center;
+}
+
+
+/*
+* Styles about translation result
+*/
+DIV.result {
+	width: 70%;
+	margin: 15px auto 50px auto;
+	font-family: arial;
+	font-size: 11pt;
+	line-height: 130%;
+}
+
+DIV.result TABLE {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+DIV.result TABLE TD {
+	vertical-align: top;
+}
+
+DIV.result TABLE TD.words {
+	width: 5%;
+	white-space: nowrap;
+}
+
+DIV.result TABLE TD.words DIV.words {
+	border-right: 1px solid gainsboro;
+	padding-right: 15px;
+}
+
+DIV.result TABLE TD.words DIV.words BUTTON.scrollWords {
+	width: 49%;
+	margin-top: 15px;
+	font-size: 70%;
+}
+
+DIV.result TABLE TD.translation {
+	padding-left: 15px;
+	width: 95%;
+	line-height: 100%;
+}
+
+DIV.result DIV.translation {
+	line-height: 100%;
+}
+
+DIV.result H2 {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+	font-size: 110%;
+}
+
+SPAN.transcription {
+	color: blue;
+}
+
+SPAN.highlight {
+	color: red;
+}
+
+SPAN.next {
+	color: red;
+	font-weight: bold;
+}
+
+SPAN.total {
+	color: red;
+	font-weight: bold;
+}
+
+SPAN.found {
+	color: green;
+	font-size: 80%;
+}
+
+SPAN.missing {
+	color: red;
+	font-size: 80%;
+}
+
+SPAN.misspelled {
+	color: blue;
+}
+
+SPAN.wrongWord {
+	font-weight: bold;
+}
+
+SPAN.error {
+	color: red;
+}
+
+
+SPAN.red {
+	color: red;
+}
+
+SPAN.green {
+	color: green;
+}
+
+SPAN.blue {
+	color: blue;
+}
+
+SPAN.bold {
+	font-weight: bold;
+}
+
+SPAN.italic {
+	font-style: italic;
+}
+
+DIV.error {
+	margin: 20px auto 20px auto;
+	text-align: center;
+	color: red;
+	font-size: 150%;
+}

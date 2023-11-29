@@ -1,0 +1,86 @@
+.cc_banner-wrapper {
+	position: relative;
+	z-index: 9001;
+}
+
+.cc_container .cc_btn {
+	background-color: #dcdcdc;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1.5em;
+	margin-left: 10px;
+	max-width: 120px;
+	padding: 6px 10px;
+	text-align: center;
+}
+
+.cc_container .cc_message {
+	display: inline-block;
+	text-align: left;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.cc_container {
+	background: #f8f8ff;
+	bottom: 0;
+	box-sizing: border-box;
+	left: 0;
+	overflow: hidden;
+	padding: 10px;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cc_container a, .cc_container a:visited {
+	color: #0000ff;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+	.cc_container .cc_btn {
+		font-size: .8em;
+	}
+
+	.cc_container .cc_message {
+		font-size: .8em;
+		margin-top: .5em;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.cc_container .cc_btn {
+		font-size: 1em;
+		padding: 8px 15px;
+	}
+
+	.cc_container .cc_message {
+		font-size: 1em;
+		line-height: 1em;
+	}
+
+	.cc_container {
+		padding: 15px 30px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.cc_container .cc_message {
+		font-size: 1em;
+	}
+}
+
+@media print {
+	.cc_banner-wrapper, .cc_container {
+		display: none;
+	}
+}
+

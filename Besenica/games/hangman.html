@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-27483527-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-27483527-1');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7344176245487788" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+<meta http-equiv="Content-Language" content="bg"/>
+<title>Игра на бесеница - Словоред</title>
+<meta name="Description" content="Бесеница е класическа игра от училище, като идеята е да се отгатне дадена дума, като играчът вижда само броя на буквите"/>
+<meta name="Keywords" content="бесеница, класическа, игра, познаване, думи, случайни, тестове, превод, словоред, правопис"/>
+<meta name="Robots" content="Index, Follow"/>
+<meta name="Author" content="Slovored.com"/>
+<meta name="Copyright" content="Copyright (c) 2017 Slovored.com"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="stylesheet" href="/css/main.css" type="text/css"/>
+<link rel="stylesheet" href="/css/hangman.css" type="text/css"/>
+<script type="text/javascript" src="/js/common.js" charset="UTF-8" defer="defer"></script>
+<script type="text/javascript" src="/js/jx.js" charset="UTF-8" defer="defer"></script>
+<script type="text/javascript" src="/js/hangman.js" charset="UTF-8" defer="defer"></script>
+</head>
+
+<body>
+<div id="nb">
+<a href="/" class="mainLink" title="Начална страница">Начало</a>
+
+<a href="#" id="enMenu" class="mainLink" onclick="return toggleMenu('en');" onmousemove="keepMenuOnMouseMove();" onmouseout="hideMenuOnMouseOut();">Английски <span class="downButton">&#9660;</span></a>
+<div id="en" class="menu">
+<div class="out">
+<div class="in" onmousemove="keepMenuOnMouseMove();" onmouseout="hideMenuOnMouseOut();">
+<table>
+<tr>
+	<td><a href="/english" title="Двупосочен английско-български речник">Английско-български речник</a></td>
+	<td><a href="/geography" title="Двупосочен английско-български речник на географските понятия">Географски понятия</a></td>
+</tr>
+<tr>
+	<td><a href="/polytechnical" title="Двупосочен английско-български политехнически речник">Технически речник</a></td>
+	<td><a href="/medical" title="Двупосочен английско-български речник на медицинските термини">Медицински речник</a></td>
+</tr>
+<tr>
+	<td><a href="/computer" title="Английско-български речник на компютърните термини">Компютърни термини</a></td>
+	<td><a href="/en/abbr/grammar" title="Списък на употребяваните съкращения в речниците">Граматически съкращения</a></td>
+</tr>
+</table>
+</div>
+<div id="enVShadow" class="vShadow"></div>
+<div id="enHShadow" class="hShadow"></div>
+</div>
+</div>
+
+<a href="#" id="bgMenu" class="mainLink" onclick="return toggleMenu('bg');" onmousemove="keepMenuOnMouseMove();" onmouseout="hideMenuOnMouseOut();">Български <span class="downButton">&#9660;</span></a>
+<div id="bg" class="menu">
+<div class="out">
+<div class="in" onmousemove="keepMenuOnMouseMove();" onmouseout="hideMenuOnMouseOut();">
+<table>
+<tr>
+	<td><a href="/synonymous" title="Речник на синонимите в българския език">Синонимен речник</a></td>
+	<td><a href="/spellchecker" title="Проверка на правописа на български">Правопис</a></td>
+</tr>
+<tr>
+	<td><a href="/unilingual" title="Тълковен речник на българския език">Тълковен речник</a></td>
+	<td><a href="/accent" title="Проверка на ударенията на думите">Ударения</a></td>
+</tr>
+<tr>
+	<td><a href="/pravopisen-rechnik" title="Правописен речник на българския език">Правописен речник</a></td>
+	<td><a href="/hyphenation" title="Сричкопренасяне на български думи">Сричкопренасяне</a></td>
+</tr>
+<tr>
+	<td><a href="/transliteration" title="Транслитерация от български към английски според действащите закони">Транслитерация</a></td>
+	<td><a href="/grammar" title="Система за граматичен анализ на българския език">Граматика</a></td>
+</tr>
+<tr>
+	<td><a href="/bg/abbr/grammar" title="Списък на употребяваните съкращения в речниците">Граматически съкращения</a></td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div id="bgVShadow" class="vShadow"></div>
+<div id="bgHShadow" class="hShadow"></div>
+</div>
+</div>
+
+<a href="#" id="testMenu" class="mainLink" onclick="return toggleMenu('test');" onmousemove="keepMenuOnMouseMove();" onmouseout="hideMenuOnMouseOut();">Тестове <span class="downButton">&#9660;</span></a>
+<div id="test" class="menu">
+<div class="out">
+<div class="in" onmousemove="keepMenuOnMouseMove();" onmouseout="hideMenuOnMouseOut();">
+<table>
+<tr>
+	<td><a href="/test/spelling" title="Проверка на знанията при правопис на български и английски думи">Правопис на думи</a></td>
+	<td><a href="/test/translation" title="Проверка на знанията при превод от английски на български и обратно">Превод на думи</a></td>
+</tr>
+<tr>
+	<td><a href="/games/hangman" title="Добре известната класическа игра бесеница">Игра на бесеница</a></td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+</div>
+<div id="testVShadow" class="vShadow"></div>
+<div id="testHShadow" class="hShadow"></div>
+</div>
+</div>
+
+<a href="#" id="systemMenu" class="mainLink" onclick="return toggleMenu('system');" onmousemove="keepMenuOnMouseMove();" onmouseout="hideMenuOnMouseOut();">Системни <span class="downButton">&#9660;</span></a>
+<div id="system" class="menu">
+<div class="out">
+<div class="in" onmousemove="keepMenuOnMouseMove();" onmouseout="hideMenuOnMouseOut();">
+<table>
+<tr>
+	<td><a href="/settings.html" title="Настройки на търсенето и превода">Настройки</a></td>
+	<td><a href="/sitemap.html" title="Карта на сайта">Карта на сайта</a></td>
+</tr>
+<tr>
+	<td><a href="/contact.html" title="Въпроси, запитвания и коментари">Връзка с нас</a></td>
+	<td><a href="/legal.html" title="Права и условия за ползване на сайта">Условия за ползване</a></td>
+</tr>
+<tr>
+	<td><a href="/words.html" title="Списък на наличните думи в речниците">Списък на думите</a></td>
+	<td><a href="/cookiepolicy.html" title="Политика на бисквитки на сайта">Политика на бисквитки</a></td>
+</tr>
+</table>
+</div>
+<div id="systemVShadow" class="vShadow"></div>
+<div id="systemHShadow" class="hShadow"></div>
+</div>
+</div>
+
+<div id="right">
+&#169; Slovored.com
+</div>
+</div>
+
+<h1 class="title">Бесеница</h1>
+
+<div class="topDescription">
+<p>Класическата игра на бесеница няма нужда от описание как се играе. Всеки я е играл в училище.
+За да започнете нова игра, просто изберете категорията и натиснете бутона "Нова игра".</p>
+</div>
+
+<form name="control" method="GET" action="no_action" onsubmit="return checkLetter();">
+<table id="hmTable" summary="Used for layout reasons">
+<tr>
+<td id="hmImageCell">
+	<img id="hmImage" src="/images/hangman/hangman0.png"/>
+</td>
+<td id="hmControlCell">
+	<table id="hmControlTable">
+		<tr>
+			<td>
+				<table id="hmCategoryTable">
+					<tr>
+						<td>Категория:</td>
+						<td>
+							<select name="category">
+								<optgroup label="Български език">
+									<option value="1">Лесни съществителни</option>
+									<option value="2">Трудни съществителни</option>
+									<option value="3">Животни</option>
+									<option value="4">Столици</option>
+									<option value="5">Държави</option>
+								</optgroup>
+								<optgroup label="Английски език">
+									<option value="11">Лесни съществителни</option>
+									<option value="12">Трудни съществителни</option>
+									<option value="13">Животни</option>
+									<option value="14">Столици</option>
+									<option value="15">Държави</option>
+								</optgroup>
+							</select>
+						</td>
+						<td>
+							<button type="button" name="start" value="start" onclick="startNewGame();" title="Стартиране на нова игра със случайна дума от избраната категория">Нова&nbsp;игра</button>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td id="hwWordToGuess">Дума за отгатване</td>
+		</tr>
+		<tr>
+			<td>
+				<table id="hwWordTable">
+					<tr>
+						<td><div class="hmLetter" id="hmLetter0"></div></td>
+						<td><div class="hmLetter" id="hmLetter1"></div></td>
+						<td><div class="hmLetter" id="hmLetter2"></div></td>
+						<td><div class="hmLetter" id="hmLetter3"></div></td>
+						<td><div class="hmLetter" id="hmLetter4"></div></td>
+						<td><div class="hmLetter" id="hmLetter5"></div></td>
+						<td><div class="hmLetter" id="hmLetter6"></div></td>
+						<td><div class="hmLetter" id="hmLetter7"></div></td>
+						<td><div class="hmLetter" id="hmLetter8"></div></td>
+						<td><div class="hmLetter" id="hmLetter9"></div></td>
+						<td><div class="hmLetter" id="hmLetter10"></div></td>
+						<td><div class="hmLetter" id="hmLetter11"></div></td>
+						<td><div class="hmLetter" id="hmLetter12"></div></td>
+						<td><div class="hmLetter" id="hmLetter13"></div></td>
+						<td><div class="hmLetter" id="hmLetter14"></div></td>
+						<td><div class="hmLetter" id="hmLetter15"></div></td>
+						<td><div class="hmLetter" id="hmLetter16"></div></td>
+						<td><div class="hmLetter" id="hmLetter17"></div></td>
+						<td><div class="hmLetter" id="hmLetter18"></div></td>
+						<td><div class="hmLetter" id="hmLetter19"></div></td>
+						<td><div class="hmLetter" id="hmLetter20"></div></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table id="hwLetterInput">
+					<tr>
+						<td>
+							<input type="text" name="letter" id="letter" size="1" maxlength="1" title="Въведете буква в полето и натиснете Enter" disabled="disabled"/>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td id="hwWrongLetters">Непознати букви</td>
+		</tr>
+		<tr>
+			<td>
+				<table id="hwWrongTable">
+					<tr>
+						<td><div class="hmWrong" id="hmWrong0"></div></td>
+						<td><div class="hmWrong" id="hmWrong1"></div></td>
+						<td><div class="hmWrong" id="hmWrong2"></div></td>
+						<td><div class="hmWrong" id="hmWrong3"></div></td>
+						<td><div class="hmWrong" id="hmWrong4"></div></td>
+						<td><div class="hmWrong" id="hmWrong5"></div></td>
+						<td><div class="hmWrong" id="hmWrong6"></div></td>
+						<td><div class="hmWrong" id="hmWrong7"></div></td>
+						<td><div class="hmWrong" id="hmWrong8"></div></td>
+						<td><div class="hmWrong" id="hmWrong9"></div></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</td>
+</tr>
+</table>
+</form>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7344176245487788"
+     crossorigin="anonymous"></script>
+<!-- slovored.com - ads -->
+<center>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7344176245487788"
+     data-ad-slot="3595087935"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+
+
+
+<script type="text/javascript" src="/js/cookieconsent.js" charset="UTF-8"></script>
+</body>
+</html>

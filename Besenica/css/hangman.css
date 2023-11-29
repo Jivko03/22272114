@@ -1,0 +1,128 @@
+/*
+* Styles about hangman game
+*/
+TABLE#hmTable {
+	width: 10%;
+	margin: 10px auto 20px auto;
+	border-collapse: collapse;
+}
+
+TABLE#hmTable TD {
+	width: 50%;
+	padding: 0px 10px;
+	vertical-align: top;
+}
+
+
+TABLE#hmControlTable {
+	width: 10%;
+	margin: 0px;
+	border-collapse: collapse;
+}
+
+TABLE#hmControlTable TD {
+	padding: 0px 5px;
+	vertical-align: top;
+}
+
+
+TABLE#hmCategoryTable {
+	width: 10%;
+	margin: 0px auto 70px auto;
+	border-collapse: collapse;
+}
+
+TABLE#hmCategoryTable TD {
+	padding: 8px;
+	vertical-align: middle;
+}
+
+
+TABLE#hwWordTable {
+	width: 10%;
+	margin: 30px auto 20px auto;
+	border-collapse: collapse;
+}
+
+TABLE#hwWordTable TD {
+	padding: 0px;
+	margin: 0px;
+	vertical-align: bottom;
+}
+
+DIV.hmLetter, DIV.hmWrong {
+	width: 21px;
+	height: 22px;
+	margin: 2px;
+	padding: 2px;
+	font-size: 15pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+DIV.hmLetter {
+	border-bottom: 2px solid mediumblue;
+	display: none;
+}
+
+DIV.hmWrong {
+	border-bottom: 2px solid red;
+}
+
+
+TD#hwWordToGuess {
+	text-align: center;
+	color: mediumblue;
+	font-size: 125%;
+}
+
+TD#hwWrongLetters {
+	text-align: center;
+	color: red;
+	font-size: 125%;
+}
+
+
+TABLE#hwLetterInput {
+	width: 10%;
+	margin: 10px auto 70px auto;
+	border-collapse: collapse;
+}
+
+TABLE#hwLetterInput TD {
+	padding: 0px;
+	margin: 0px;
+	vertical-align: top;
+	text-align: center;
+}
+
+TABLE#hwLetterInput INPUT {
+	text-align: center;
+	font-size: 16pt;
+	font-weight: bold;
+	font-family: inherit;
+}
+
+
+TABLE#hwWrongTable {
+	width: 10%;
+	margin: 30px auto 20px auto;
+	border-collapse: collapse;
+}
+
+TABLE#hwWrongTable TD {
+	padding: 0px;
+	margin: 0px;
+	vertical-align: bottom;
+}
+
+
+DIV#hmLetter0 {
+	visibility: hidden;
+	display: block;
+}
+
+
+IMG#hmImage {
+	border: 0px;
+}
